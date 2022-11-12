@@ -11,7 +11,11 @@ export const styles = StyleSheet.create({
     },
 
     startGameScreenItemsWrapper: {
-        width: '100%'
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     startGameScreenInput: {
         borderBottomWidth: 2,
@@ -20,9 +24,10 @@ export const styles = StyleSheet.create({
         width: 50,
         fontSize: 32,
         fontWeight: 'bold',
-        borderBottomCollor: '#ddb52f',
+        borderBottomColor: '#ddb52f',
         textAlign: 'center',
         marginVertical: 8,
+        color: '#ddb52f'
     },
     buttonWrapper: {
         width: '100%',

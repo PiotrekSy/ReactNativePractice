@@ -6,9 +6,13 @@ import PrimaryButton from '../components/PrimaryButton'
 const StartGameScreen = () => {
     return (
         <View style={styles.startGameScreen}>
-            <View style={startGameScreenItemsWrapper}>
-                <TextInput placeholder='' style={styles.startGameScreenInput} />
-                <View style={styles.buttonWraper}>
+            <View style={styles.startGameScreenItemsWrapper}>
+                <TextInput
+                    style={styles.startGameScreenInput}
+                    maxLength={2}
+                    keyboardType='number-pad'
+                />
+                <View style={styles.buttonWrapper}>
                     <PrimaryButton style={styles.buttonPrimary}>RESET</PrimaryButton>
                     <PrimaryButton style={styles.buttonPrimary}>CONFIRM</PrimaryButton>
                 </View>
