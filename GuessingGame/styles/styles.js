@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import Colors from '../constants/colors'
 
 export const styles = StyleSheet.create({
     //WHOLE APP AND BACKGROUND:
@@ -23,7 +24,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: '20%',
-        backgroundColor: '#35061e',
+        backgroundColor: Colors.primary600,
         borderRadius: 20,
 
     },
@@ -34,10 +35,10 @@ export const styles = StyleSheet.create({
         width: 50,
         fontSize: 32,
         fontWeight: 'bold',
-        borderBottomColor: '#ddb52f',
+        borderBottomColor: Colors.primary100,
         textAlign: 'center',
         marginVertical: 8,
-        color: '#ddb52f'
+        color: Colors.primary100,
     },
     buttonsWrapper: {
         width: '100%',
@@ -65,7 +66,7 @@ export const styles = StyleSheet.create({
     },
     buttonPrimaryInner: {
         height: 45,
-        backgroundColor: '#4e0329',
+        backgroundColor: Colors.primary600,
         width: '100%',
         display: 'flex',
         justifyContent: 'center',
@@ -80,5 +81,32 @@ export const styles = StyleSheet.create({
     },
     pressed: {
         opacity: 0.75
-    }
+    },
+
+    //GAME SCREEN
+
+    gameScreen: {
+        // flex: 1,
+        marginTop: '20%',
+        padding: 20,
+        display: 'flex',
+        flexDirection: "column",
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    gameScreenTitle: {
+        fontWeight: 'bold',
+        fontSize: 24,
+        color: Colors.primary100,
+        borderWidth: 2,
+        borderColor: Colors.primary100,
+        padding: 12
+    },
+    gameNumberContainer: {
+        borderWidth: 4,
+        borderColor: Colors.primary100,
+    },
+
+
+
 })

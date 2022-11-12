@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { View, TextInput, Text, Alert } from 'react-native'
 import styles from '../styles'
-import PrimaryButton from '../components/PrimaryButton'
+import PrimaryButton from '../components/ui/PrimaryButton'
 
-const StartGameScreen = () => {
+const StartGameScreen = ({ onPickNumber }) => {
 
     const [enteredNumber, setEnteredNumber] = useState('')
-    // const [] = useState()
 
     const numberInputHandler = (inputValue) => {
         setEnteredNumber(inputValue);
@@ -17,7 +16,8 @@ const StartGameScreen = () => {
     }
 
     const confirmInputHandler = () => {
-        const chosenNumber = parseInt(enteredNumber)
+
+        const chosenNumber = parseInt(enteredNumber);
 
         if (isNaN(chosenNumber) || chosenNumber <= 0 || chosenNumber > 99) {
             Alert.alert(
@@ -27,7 +27,7 @@ const StartGameScreen = () => {
             );
             return;
         }
-        console.log('Valid Number')
+        onPickNumber(chosenNumber);
     }
 
 
@@ -39,7 +39,6 @@ const StartGameScreen = () => {
                     maxLength={2}
                     keyboardType='number-pad'
                     autoCapitalize='none'
-                    // autoComplete={false}
                     value={enteredNumber}
                     onChangeText={numberInputHandler}
                 />
