@@ -1,14 +1,20 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
+    //WHOLE APP AND BACKGROUND:
+
+    rootScreen: {
+        flex: 1,
+    },
     startGameScreen: {
         flex: 1,
         padding: 16,
-        backgroundColor: '#223c42',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
     },
+    backgroundImage: {
+        opacity: 0.15
+    },
+
+    //LANDING SCREEN:
 
     startGameScreenItemsWrapper: {
         width: '100%',
@@ -16,6 +22,10 @@ export const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        marginTop: '20%',
+        backgroundColor: '#35061e',
+        borderRadius: 20,
+
     },
     startGameScreenInput: {
         borderBottomWidth: 2,
@@ -29,29 +39,46 @@ export const styles = StyleSheet.create({
         marginVertical: 8,
         color: '#ddb52f'
     },
-    buttonWrapper: {
+    buttonsWrapper: {
         width: '100%',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-evenly',
-        alignItems: 'center'
+        alignItems: 'center',
+        margin: 10,
     },
-    buttonPrimary: {
-        height: 40,
-        backgroundColor: '#c91d1d',
+    buttonContainer: {
+        flex: 1
+    },
+    buttonPrimaryOuter: {
         elevation: 8,
-        width: '40%',
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 7 },
         shadowRadius: 6,
         shadowOpacity: 0.25,
+        borderRadius: 26,
+        // width: '35%',
+        marginVertical: 8,
+        overflow: 'hidden',
+        marginHorizontal: 12
+
+    },
+    buttonPrimaryInner: {
+        height: 45,
+        backgroundColor: '#4e0329',
+        width: '100%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 10,
+        borderRadius: 26,
+        paddingVertical: 8,
+        paddingHorizontal: 16,
     },
     buttonPrimaryText: {
         fontWeight: 'bold',
-
+        color: 'white'
     },
+    pressed: {
+        opacity: 0.75
+    }
 })
