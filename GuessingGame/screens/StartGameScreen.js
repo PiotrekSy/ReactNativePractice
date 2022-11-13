@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, TextInput, Text, Alert } from 'react-native'
 import styles from '../styles'
+import Title from '../components/ui/Title'
 import PrimaryButton from '../components/ui/PrimaryButton'
 
 const StartGameScreen = ({ onPickNumber }) => {
@@ -32,8 +33,10 @@ const StartGameScreen = ({ onPickNumber }) => {
 
 
     return (
-        <View style={styles.startGameScreen}>
+        <View style={styles.startGameScreen} >
+            <Title>Guess my number!</Title>
             <View style={styles.startGameScreenItemsWrapper}>
+                <Text style = {styles.instructionText}>Enter a umber: </Text>
                 <TextInput
                     style={styles.startGameScreenInput}
                     maxLength={2}

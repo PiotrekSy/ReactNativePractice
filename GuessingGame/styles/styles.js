@@ -8,14 +8,17 @@ export const styles = StyleSheet.create({
         flex: 1,
     },
     startGameScreen: {
-        flex: 1,
         padding: 16,
+        marginTop: 100,
+        alignItems: 'center'
+
     },
+
     backgroundImage: {
         opacity: 0.15
     },
 
-    //LANDING SCREEN:
+    //START SCREEN:
 
     startGameScreenItemsWrapper: {
         width: '100%',
@@ -23,10 +26,14 @@ export const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: '20%',
+        marginTop: '10%',
         backgroundColor: Colors.primary600,
         borderRadius: 20,
-
+    },
+    instructionText: {
+        fontSize: 20,
+        color: Colors.primary100,
+        padding: 16
     },
     startGameScreenInput: {
         borderBottomWidth: 2,
@@ -49,7 +56,7 @@ export const styles = StyleSheet.create({
         margin: 10,
     },
     buttonContainer: {
-        flex: 1
+        width: '40%',
     },
     buttonPrimaryOuter: {
         elevation: 8,
@@ -86,13 +93,21 @@ export const styles = StyleSheet.create({
     //GAME SCREEN
 
     gameScreen: {
-        // flex: 1,
         marginTop: '20%',
         padding: 20,
         display: 'flex',
         flexDirection: "column",
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    gameQuestion: {
+        paddingTop: 20,
+
+    },
+    gameQuestionText: {
+        color: Colors.primary600,
+        fontWeight: 'bold',
+        fontSize: 24
     },
     gameScreenTitle: {
         fontWeight: 'bold',
