@@ -33,7 +33,8 @@ export const styles = StyleSheet.create({
     instructionText: {
         fontSize: 20,
         color: Colors.primary100,
-        padding: 16
+        padding: 16,
+        fontFamily: 'Inter_900Black'
     },
     startGameScreenInput: {
         borderBottomWidth: 2,
@@ -83,6 +84,7 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 16,
     },
     buttonPrimaryText: {
+        fontFamily: 'Inter_900Black',
         fontWeight: 'bold',
         color: 'white'
     },
