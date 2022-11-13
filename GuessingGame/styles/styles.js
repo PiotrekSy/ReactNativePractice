@@ -104,9 +104,20 @@ export const styles = StyleSheet.create({
     },
     gameNumberContainer: {
         borderWidth: 4,
-        borderColor: Colors.primary100,
+        paddingHorizontal: 96,
+        paddingVertical: 30,
+        marginTop: '5%',
+        borderColor: 'white',
+    },
+    gameNumberText: {
+        fontSize: 48,
+        fontWeight: 'bold',
+        color: Colors.primary100,
     },
 
+    gameButtonsContainer: {
+
+    }
 
 
 })
